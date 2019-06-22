@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
+    #我的apps，两种写法都行
     'photo_view.apps.PhotoViewConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
