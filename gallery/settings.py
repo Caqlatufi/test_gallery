@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'photo_view.apps.PhotoViewConfig',
 ]
 
@@ -119,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+#传输图片到网址
+MEDIA_URL = '/media/'
+#图片路径
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
