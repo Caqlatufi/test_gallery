@@ -100,7 +100,7 @@
 
   <div class="container">
         {% for blog in blogs.all %}
-            <h2><a href="">{{ blog.title }}</a></h2>
+            <h2><a href="{{ blog.id }}">{{ blog.title }}</a></h2>
             {{ blog.data }}
             <br>
             <img src="{{ blog.image.url }}" alt="" height="200">
